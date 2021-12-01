@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    gap:0;
+}
+
+/* .item{
+    border:1px solid black;
+} */
+.container{
+    margin-top:3em;
+    border:1px solid black;
+    text-align: center;
+    width:30vw
+
+}
+.container-items{
+    padding:3em;
+}
+#next{
+    width:30vw;
+    padding:0.5em;
+    background-color: aqua;
+    color:white;
+}
+body{
+    text-align: center;
+}
+ 

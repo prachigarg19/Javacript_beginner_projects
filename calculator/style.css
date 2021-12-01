@@ -1,0 +1,28 @@
+.container{
+    text-align:center;
+    margin-top: 30vh;
+     
+}
+.container input{
+    width: 32.5rem;
+    height: 4rem;
+}
+table{
+    margin: auto;
+   
+
+}
+table td button{
+   background-color: azure;
+   background-color: 2px solid black;
+   width: 4em;
+    font-size: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+table td button:hover{
+    background-color: beige;
+}
+#display{
+    font-size:2rem;
+}
