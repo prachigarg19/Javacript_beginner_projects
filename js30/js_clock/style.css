@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(33, 33, 36);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border:20px solid white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 8rem;
+    height:25vw;
+    width: 25vw;
+    transition: ease-in-out;
+   
+}
+.hand{
+    position: relative;
+    top: 50%;
+    width:47%;
+    left:3%;
+    height: 0.6rem;
+    background-color: white;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    
+}
+.hour-hand,.sec-hand,.min-hand {
+   position: absolute;
+}
+
+
