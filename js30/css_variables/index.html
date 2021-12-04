@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update css variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manipulating css variables using <span>JS</span></h1>
+    <br><br>
+    <div class="container">
+        <form>
+            <!-- name of input is same as variable names as they will be used to access variables -->
+            <label for="padding">
+                <span>Padding: </span><input type="range" min="2" max="50" name="padding" value="10" data-sizing="px">
+            </label>
+            <label for="blur">
+                <span>Blur: </span><input type="range" min="1" max="10" name="blur" value="3" data-sizing="px">
+            </label>
+             <label for="color">
+                Color: <input type="text" name="base" placeholder="#000" value="#000">
+             </label>
+        </form>
+        
+        <img src="pexels-photo-45987.jpeg" alt="Hill picture" id="image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
