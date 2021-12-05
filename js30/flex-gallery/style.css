@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* flex on container.Used to align all 5 images */
+.container{
+    display:flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+}
+/* flex on box.This will be used to align h3,h1 */
+.box{
+    flex:1;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    transition: ease-in-out 0.8s;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+/* all the boxes are given background images individually */
+.box-1{
+    background-image: url('Images/image1\ \(1\).jpg');
+    background-position: center;
+}
+.box-2{
+    background-image: url('Images/image1\ \(2\).jpg');
+    background-position: center;
+}
+.box-3{
+    background-image: url('Images/image1\ \(3\).jpg');
+    background-position: center;
+}
+.box-4{
+    background-image: url('Images/image4\ \(2\).jpg');
+    background-position: center;
+}
+.box-5{
+    background-image: url('Images/image5\ \(1\).jpg');
+    background-position: center;
+}
+.box h3{
+ font-size: 3rem;
+}
+.box h1{
+  font-size: 5rem;
+  transform: scale(0);
+}
+/* flex on box>* will applying flex on h3,h1 and h3. This is done for transition property and for better positioning */
+.box>*{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex:1;
+   transition: cubic-bezier(0, 0.95, 0.49, 0.65) 0.8s;
+   /* applies transition to both h1 and h3 */
+   
+}
+/* moving upper h3 up */
+.box>*:first-child{
+    transform: translateY(-100%);
+}
+/* moving lower h3 down */
+.box>*:last-child{
+    transform: translateY(100%);
+}
+/* this class will be added to increase size of box clicked */
+.focus{
+    flex:5;
+    /* transform: scale(1); */
+}
+
+/* @media (max-width:768px){
+    .box{
+        flex-direction: row;
+    }
+    .box>*{
+flex-direction: column;
+    }
+} */
