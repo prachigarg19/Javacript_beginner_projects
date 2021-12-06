@@ -1,0 +1,26 @@
+body{
+    background-color: yellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.1rem;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:30vw;
+    
+}
+form input{
+    height:20px;
+}
+/* to be displayed list */
+.city-list{
+    background-color: yellow;
+    font-size:1rem;
+    border: 2px solid yellow;
+    text-align: center;
+}
